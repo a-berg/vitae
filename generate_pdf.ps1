@@ -1,0 +1,1 @@
+pdflatex src/cv.tex -output-directory=".\output\" -job-name="AdrianBergesCV_$(get-date -f MMMyyyy)"

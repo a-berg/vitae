@@ -1,0 +1,91 @@
+#+TITLE:
+#+AUTHOR: Adrián Berges Enfedaque
+#+MAIL:     aberges@outlook.com
+#+PHONE:    690;236;818
+#+LOCATION: Vigo, Pontevedra
+#+WEB:      adrianberges.com
+#+LINKEDIN: linkedin.com/aberges
+#+GITHUB:   github.com/a-berg
+#+PHOTO:
+
+* Experiencia
+** Técnico ADAS
+:PROPERTIES:
+:FROM: <2018-08-20>
+:TO:   Presente
+:LOCATION: Polígono Industrial a Granxa
+:EMPLOYER: Centro Tecnolóxico da Automoción de Galicia
+:END:
+- Desarrollo de algoritmia para conducción autónoma.
+- Segmentación de nubes de puntos.
+
+** Investigador Novel
+:PROPERTIES:
+:FROM: <2015-09-04>
+:TO:   <2016-09-04>
+:LOCATION: Zaragoza
+:EMPLOYER: Universidad de Zaragoza
+:END:
+- Desarrollador de Matlab en proyecto mixto Universidad-Empresa.
+- Uso de técnicas de reducción de dimensionalidad para problema termomecánico.
+- Mejora importante del tiempo de cálculo respecto al modelo de referencia en ANSYS Mechanical.
+- Desarrollo de código para importación/exportación de formatos ANSYS y XDMF3.
+- Labores de investigación en reducción de modelos para problemas escalares y vectoriales.
+- Derivación de las fórmulas del modelo escalar.
+
+* Educación
+** Matemática Industrial
+:PROPERTIES:
+:FROM: <2016-09-01>
+:TO:   <2018-09-01>
+:TYPE: Máster en
+:LOCATION: Santiago de Compostela
+:INSTITUTION: Universidad de Santiago de Compostela
+:END:
+
+** Ingeniería Mecánica
+:PROPERTIES:
+:FROM: <2010-09-01>
+:TO:   <2015-07-01>
+:TYPE: Grado en
+:LOCATION: Zaragoza
+:INSTITUTION: Universidad de Zaragoza
+:END:
+
+* Aptitudes
+** Programación
+- C++: Experiencia laboral demostrable.
+- Matlab: Experiencia laboral demostrable.
+- Python
+- git
+- CMake
+- Google Test
+
+** Idiomas
+- Español (nativo)
+- Inglés (CEFRL C2)
+
+* Proyectos
+** Trabajo de Fin de Máster
+:PROPERTIES:
+:TECH: R, Matlab
+:END:
+
+Modelización del comportamiento de boyas en el océano mediante técnicas de
+regresión e inferencia estadística usando R y Matlab (Nota: 9.7).
+
+** ECMI Modelling Week 2017
+:PROPERTIES:
+:TECH: ANSYS Fluent
+:END:
+
+Optimización de mezcla de gases en conductos.
+
+** Trabajo de Fin de Grado
+:PROPERTIES:
+:TECH: OpenGL, C++
+:END:
+
+Desarrollo de código en C++ para la reconstrucción de soluciones
+provenientes de reducción de modelos. Desarrollo de métodos de detección de la
+colisión entre objetos para la simulación (Nota: 9.0).
