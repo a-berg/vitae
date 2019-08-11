@@ -1,0 +1,38 @@
+\usepackage[margin=15mm]{geometry}
+\usepackage{graphicx}
+\usepackage[fixed]{fontawesome5}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[ocgcolorlinks]{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+}
+\titleformat{name=\section,numberless}[block]
+  {\titlerule\addvspace{2pt}\sffamily\fontsize{9}{11}}
+  {}{0pt}{\addfontfeature{LetterSpace=4.0}\uppercase}
+
+\setmainfont[
+    Numbers={Monospaced,Uppercase},
+    BoldFont=Vollkorn SemiBold]{Vollkorn Regular}
+\setsansfont{Open Sans}
+\setmonofont{Fira Code Retina}
+
+\setitemize{itemsep=-1pt}
+
+\newcommand{\cvitem}[5]{
+    \noindent
+    \textbf{\large #1}  \hfill {\small #2 -- #3} \newline
+    \textit{#4}         \hfill #5
+}
+
+\newcommand{\projitem}[3]{
+    \noindent
+    \textbf{\large #1} con {\small #2} \vspace{2pt}\newline
+    #3
+    \vspace{8pt}
+}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\textbullet}}$}
+\def\Cpp{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.1ex}{++}}}
