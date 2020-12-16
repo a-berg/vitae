@@ -1,7 +1,12 @@
 DATE := `date "+%b%Y"`
+JOBNAME := "AdrianBergesCV_" + DATE
 
 all:
-	xelatex src/cv.tex \
-		-include-directory="./src/" \
-		-output-directory="./output/" \
-		-job-name="AdrianBergesCV_{{DATE}}"
+	xelatex \
+		-output-directory="./aux" \
+		src/cv.tex
+	mv ./aux/cv.pdf ./{{JOBNAME}}.pdf
+
+
+get-fonts:
+	sudo apt install fonts-vollkorn fonts-open-sans
