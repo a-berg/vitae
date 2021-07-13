@@ -1,6 +1,8 @@
 output/
 docs/
+docs
 *.log
 /aux/
 *.pdf
 /src/auto/
+
