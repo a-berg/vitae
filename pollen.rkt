@@ -37,4 +37,8 @@
 
 
 ;; Aquí definir tests
+(module+ test
+  (require rackunit)
+  (check-equal? "meses" (maybe-plural "mes" 2)))
 
+(provide fmt-dates)

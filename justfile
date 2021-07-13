@@ -1,17 +1,14 @@
-DATE := `date "+%b%Y"`
+DATE := `LC_TIME=es_ES.UTF-8 date "+%b%Y"`
 JOBNAME := "AdrianBergesCV_" + DATE
 
-all: makepdf pythontex makepdf
-  mv ./aux/cv.pdf ./{{JOBNAME}}.pdf
+all: pptex makepdf
+  mv ./cv.pdf ./{{JOBNAME}}.pdf
 
 makepdf:
-  xelatex \
-    -output-directory="./aux" \
-    -interaction=nonstopmode \
-    src/cv.tex
+  tectonic src/cv.tex --outdir .
 
-pythontex:
-  pythontex aux/cv.pytxcode
+pptex:
+  racket src/zxp.scrbl > src/zxp.tex
 
 get-fonts:
   sudo apt install fonts-vollkorn fonts-open-sans

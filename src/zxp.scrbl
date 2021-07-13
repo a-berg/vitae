@@ -1,6 +1,10 @@
+#lang scribble/text
+@(require "../pollen.rkt")
+@(require gregor)
+
 \cvitem
     {Técnico Superior de Investigación}
-    {2019 -- Actualidad (1 año y 9 meses)}
+    {@fmt-dates[(date 2019 10 04) (today)]}
     {Centro Singular de Investigación en Tecnoloxías Intelixentes}
     {Santiago de Compostela, A Coruña}
 \begin{itemize}
@@ -15,7 +19,7 @@
 
 \cvitem
     {Técnico ADAS}
-    {2018 -- 2019 (1 año y 2 meses)}
+    {@fmt-dates[(date 2018 08 01) (date 2019 10 01)]}
     {Centro Tecnológico de Automoción de Galicia}
     {O Porriño, Pontevedra}
 \begin{itemize}
@@ -28,7 +32,7 @@
 
 \cvitem
     {Investigador Novel}
-    {2015 -- 2016 (1 año)}
+    {@fmt-dates[(date 2015) (date 2016)]}
     {Universidad de Zaragoza}
     {Zaragoza}
 \begin{itemize}

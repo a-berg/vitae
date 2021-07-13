@@ -2,10 +2,11 @@
 \usepackage{graphicx}
 \usepackage[fixed]{fontawesome5}
 \usepackage{fontspec}
+\usepackage{fancyhdr}
 \usepackage{enumitem}
-\usepackage{pythontex}
 \usepackage{titlesec}
 \usepackage[ocgcolorlinks]{hyperref}
+\usepackage[spanish]{babel}
 
 \hypersetup{
     colorlinks=true,
@@ -27,10 +28,10 @@
 
 \setitemize{itemsep=-1pt}
 
-\newcommand{\cvitem}[5]{
+\newcommand{\cvitem}[4]{
     \noindent
-    \textbf{\large #1}  \hfill {\small #2 -- #3} \newline
-    \textit{#4}         \hfill #5
+    \textbf{\large #1}  \hfill {\small #2} \newline
+    \textit{#3}         \hfill #4
 }
 
 \newcommand{\projitem}[3]{
@@ -50,3 +51,6 @@
 
 \renewcommand{\labelitemi}{$\vcenter{\hbox{\textbullet}}$}
 \def\Cpp{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.1ex}{++}}}
+
+\fancyfoot[R]{\small Actualizado a \today}
+\pagestyle{fancy}
