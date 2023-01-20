@@ -1,0 +1,47 @@
+- jobtitle: Researcher / Engineer
+  location: Vigo, Pontevedra
+  company: Gradiant
+  start: 2021-08-17
+  end: now
+  highlights:
+    - Worked on a diverse range of projects across various domains, including Industry 4.0, fintech, education, and aerospace.
+    - Did work on descriptive, predictive and prescriptive analytics.
+    - Designed several ML systems using a wide array of algorithms, including XGBoost, VAEs and GRUs, or explainable models.
+    - Applied MLOps principles to the 
+  tools: Python, Jupyter, MLflow, TimescaleDB, PostgreSQL, pandas, scikit-learn, Tensorflow, XGBoost
+
+- jobtitle: Research Technician
+  location: Santiago de Compostela, A Coruña
+  company: Centro Singular de Investigación en Tecnoloxías Intelixentes
+  start: 2019-10-15
+  end: 2021-08-10
+  highlights:
+    - Utilized neural networks (with Keras and Tensorflow) to model industrial processes as a mid-level developer.
+    - Participated in the implementation of prescriptive analytics to control and automate the one part of the process.
+    - Experience in mentoring junior team members, uploading and maintaining models in client's machines and Hyperparameter tuning with a HPC cluster.
+    - Proficient in various neural network architectures and feature selection algorithms.
+  tools: Python, Jupyter, Tensorflow, pandas, BigQuery
+
+- jobtitle: ADAS Technician
+  location: O Porriño, Pontevedra
+  company: Centro Tecnológico de Automoción de Galicia
+  start: 2018-08-10
+  end: 2019-10-10
+  highlights:
+    - Developed custom LiDAR point cloud segmentation algorithm.
+    - Successfully improved sensor performance.
+    - Entry-level knowledge in multi-object tracking and sensor fusion using Kalman filters.
+    - Gained junior-level \Cpp programming expertise in the context of 3D Computer Vision algorithms.
+  tools: \Cpp 11, CMake, Autosar, LiDAR, ParaView, 
+
+- jobtitle: Junior Researcher
+  location: Zaragoza
+  company: Universidad de Zaragoza
+  start: 2015-09-04
+  end: 2016-09-04
+  highlights:
+    - Implemented an algorithm in Matlab using dimensionality reduction techniques for a thermal-mechanical problem in a novel research setting as a junior.
+    - The implemented solution was orders of magnitude faster than commercial software.
+    - Worked under the guidance of mentors.
+    - Gained strong skills in Matlab, and understanding of how dimensionality reduction techniques can be applied to an industrial setting.
+  tools: Matlab, ANSYS, ParaView

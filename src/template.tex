@@ -1,0 +1,59 @@
+\documentclass[a4]{article}
+
+\input{header}
+
+\begin{document}
+
+\input{zzpersonal}
+
+\section*{Experience}
+$for(experience)$
+\cvitem
+    {$experience.jobtitle$}
+    {$experience.start$ -- $experience.end$ ($experience.duration$)}
+    {$experience.company$}
+    {$experience.location$}
+\begin{itemize}
+  $for(experience.highlights)$
+  \item $experience.highlights$
+  $endfor$
+\end{itemize}    
+$endfor$
+
+\section*{Education}
+
+$for(education.r)$
+\cvitem
+    {$education.r.type$ $education.r.title$}
+    {$education.r.start$ -- $education.r.end$}
+    {$education.r.institution$}
+    {$education.r.location$}
+
+\vspace{10pt}
+$endfor$
+\vspace{2pt}
+\pseudosection{Other education}
+$for(education.o)$
+\cvitem
+    {$education.o.title$}
+    {$education.o.start$ -- $education.o.end$ ($education.o.duration$)}
+    {$education.o.institution$}
+    {$education.o.location$}
+
+\vspace{10pt}
+$endfor$
+
+\section*{Skills}
+
+${ for(skills) }
+\subsection*{${ skills.header }}
+
+\begin{tabular}[t]{ll}
+  ${ for(skills.table) }
+  ${ skills.table[ & ] }\\
+  ${ endfor }
+\end{tabular}
+
+${ endfor }
+
+\end{document}

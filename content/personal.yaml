@@ -1,0 +1,15 @@
+portrait: ../docs/PortraitCropped.jpg
+name: Adrián Berges Enfedaque
+mail:
+phone:
+location:
+links:
+  linkedin:
+    url: http://www.linkedin.com/in/adrianberges/
+    display: /in/adrianberges
+  github:
+    url: http://www.github.com/a-berg
+    display: a-berg
+#  website:
+#    url: 
+#    display:

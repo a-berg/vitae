@@ -1,0 +1,13 @@
+- header: Languages
+  table:
+    - [Spanish, Native]
+    - [English, CEFRL C1 (CAE)]
+- header: Soft skills
+  table:
+    - ["Communication"]
+- header: Technical skills
+  table:
+    - ["Programming languages", "Python, SQL, \\Cpp, Matlab"]
+    - ["Data Science & Machine Learning", "pandas, Tensorflow, scikit-learn, MLFlow, UMAP, Pytorch"]
+    - ["Databases",  "PostgreSQL, DuckDB, TimescaleDB"]
+    - ["Tools", "git, Emacs, \\LaTeX, pandoc"]

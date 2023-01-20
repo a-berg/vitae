@@ -1,0 +1,16 @@
+- project: Master's Thesis
+  tools: R, Matlab
+  brief: >
+    Used Machine Learning regression techniques to model the movements of 
+    commercial fishing buoys in the ocean, using R and Matlab (Grade: 9.7)
+- project: ECMI Modelling Week 2017
+  tools: ANSYS Fluent™
+  brief: >
+    Optimized mixing of gasses in ducts. Results were exposed in English in 
+    front of European colleagues.
+- project: BSc Final Project
+  tools: OpenGL, \Cpp
+  brief: >
+    Developed \Cpp code to reconstruct solutions of continuum mechanics 
+    solved via reduced order models. I developed code for collision detection 
+    between objects in the simulation.

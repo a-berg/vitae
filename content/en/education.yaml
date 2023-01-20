@@ -1,0 +1,26 @@
+r:
+  - title: Industrial Mathematics
+    type: MSc
+    location: Santiago de Compostela
+    institution: Universidade de Santiago de Compostela
+    start: 2016
+    end: 2018
+  - title: Mechanical Engineering
+    type: BSc
+    location: Zaragoza
+    institution: Universidad de Zaragoza
+    start: 2010
+    end: 2015
+o:
+  - title: Probabilistic Deep Learning with Tensorflow 2
+    location: Online
+    institution: Imperial College London via Coursera
+    start: 2020
+    end: 2020
+    duration: 5 weeks
+  - title: Machine Learning Engineering for Production (MLOps)
+    location: Online
+    institution: DeepLearning.AI via Coursera
+    start: 2021
+    end: 2022
+    duration: 16 weeks

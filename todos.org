@@ -1,0 +1,6 @@
+* TODO limpiar morralla
+* TODO hacer algo de workflow github automatizado
+* TODO reorganizar templates, cv.yaml etc.
+* TODO hacer dummy.md en vez de cv.md
+* DONE añadir /tools/ a cvitem
+* TODO escribir filtro en vez de script, y meter varios yaml al comando :advanced:

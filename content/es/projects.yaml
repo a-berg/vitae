@@ -1,0 +1,16 @@
+- project: Master's Thesis
+  tools: R, Matlab
+  brief: >
+    Modelización del comportamiento de boyas en el océano mediante técnicas
+    de regresión e inferencia estadística usando R y Matlab (Nota: 9.7).
+- project: ECMI Modelling Week 2017
+  tools: ANSYS Fluent™
+  brief: >
+    Optimización de mezcla de gases en conductos. Exposición de resultados 
+    en inglés frente a compañeros y profesores de toda Europa.
+- project: BSc Final Project
+  tools: OpenGL, \Cpp
+  brief: >
+    Desarrollo de código en C++ para la reconstrucción de soluciones provenientes 
+    de reducción de modelos. Desarrollo de métodos de detección de la colisión 
+    entre objetos para la simulación (Nota: 9.0).
