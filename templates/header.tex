@@ -36,6 +36,9 @@
     BoldFont=Vollkorn SemiBold]{Vollkorn Regular}
 \setsansfont{Open Sans}
 % \setmonofont{Iosevka SS04}
+\newfontfamily{\myName}{Open Sans}[
+    LetterSpace=10, WordSpace=3
+]
 
 \setitemize{itemsep=-1pt}
 
@@ -63,6 +66,6 @@
 \renewcommand{\labelitemi}{$\vcenter{\hbox{\textbullet}}$}
 \def\Cpp{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.1ex}{++}}}
 
-\fancyhead[R]{\small Updated on \today}
+\fancyhead[R]{\sffamily\small Updated on \today}
 \renewcommand{\headrulewidth}{0pt}
 \pagestyle{fancy}

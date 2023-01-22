@@ -1,15 +1,20 @@
-portrait: ../docs/PortraitCropped.jpg
-name: Adrián Berges Enfedaque
-mail:
-phone:
-location:
-links:
-  linkedin:
-    url: http://www.linkedin.com/in/adrianberges/
-    display: /in/adrianberges
-  github:
-    url: http://www.github.com/a-berg
-    display: a-berg
-#  website:
-#    url: 
-#    display:
+personal:
+  portrait: ./docs/PortraitCropped.jpg
+  name: Adrián Berges Enfedaque
+  mail: aberges@outlook.com
+  phone: 690 236 818
+  location: Santiago de Compostela, A Coruña
+  links:
+    linkedin:
+      url: http://www.linkedin.com/in/adrianberges/
+      display: /in/adrianberges
+      faicon: "faLinkedinIn"
+    github:
+      url: http://www.github.com/a-berg
+      display: a-berg
+      faicon: "faGithub"
+    website:
+      url: https://a-berg.github.io/philambdapi/
+      display: blog
+      faicon: "faGlobe"
+  

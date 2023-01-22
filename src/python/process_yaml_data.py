@@ -60,12 +60,12 @@ def humanize(dt):
 def main():
     data = OmegaConf.create(
         dict(
-            personal=OmegaConf.load("./content/personal.yaml"),
             experience=OmegaConf.load("./content/en/experience.yaml"),
             education=OmegaConf.load("./content/en/education.yaml"),
             skills=OmegaConf.load("./content/en/skills.yaml"),
         )
     )
+    data = OmegaConf.merge(OmegaConf.load("./content/personal.yaml"), data)
 
     for item in data.experience:
         dt = CVDateInterval(DateInterval(item.start, item.end))
@@ -75,6 +75,8 @@ def main():
 
     with open("./src/cv.yaml", "w+") as f:
         f.write(OmegaConf.to_yaml(data))
+    # with open("./content/en/experience_.yaml", "w+") as f:
+    #     f.write(OmegaConf.to_yaml(data.experience))
 
 
 if __name__ == "__main__":

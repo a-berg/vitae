@@ -1,0 +1,6 @@
+%% This is a template for pandoc usage
+\newcommand{\cvitem}[4]{
+    \noindent
+    \textbf{\large #1}  \hfill {\small #2} \newline
+    \textit{#3}         \hfill #4
+}

@@ -4,10 +4,9 @@
   start: 2021-08-17
   end: now
   highlights:
-    - Worked on a diverse range of projects across various domains, including Industry 4.0, fintech, education, and aerospace.
+    - Worked on a diverse range of projects across various domains, including Industry 4.0, FinTech, education, and aerospace.
     - Did work on descriptive, predictive and prescriptive analytics.
     - Designed several ML systems using a wide array of algorithms, including XGBoost, VAEs and GRUs, or explainable models.
-    - Applied MLOps principles to the 
   tools: Python, Jupyter, MLflow, TimescaleDB, PostgreSQL, pandas, scikit-learn, Tensorflow, XGBoost
 
 - jobtitle: Research Technician
@@ -32,7 +31,7 @@
     - Successfully improved sensor performance.
     - Entry-level knowledge in multi-object tracking and sensor fusion using Kalman filters.
     - Gained junior-level \Cpp programming expertise in the context of 3D Computer Vision algorithms.
-  tools: \Cpp 11, CMake, Autosar, LiDAR, ParaView, 
+  tools: \Cpp 11, CMake, Autosar, LiDAR, ParaView
 
 - jobtitle: Junior Researcher
   location: Zaragoza

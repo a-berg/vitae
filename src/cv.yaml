@@ -1,16 +1,22 @@
 personal:
-  portrait: ../docs/PortraitCropped.jpg
+  portrait: ./docs/PortraitCropped.jpg
   name: Adrián Berges Enfedaque
-  mail: null
-  phone: null
-  location: null
+  mail: aberges@outlook.com
+  phone: 690 236 818
+  location: Santiago de Compostela, A Coruña
   links:
     linkedin:
       url: http://www.linkedin.com/in/adrianberges/
       display: /in/adrianberges
+      faicon: faLinkedinIn
     github:
       url: http://www.github.com/a-berg
       display: a-berg
+      faicon: faGithub
+    website:
+      url: https://a-berg.github.io/philambdapi/
+      display: blog
+      faicon: faGlobe
 experience:
 - jobtitle: Researcher / Engineer
   location: Vigo, Pontevedra
@@ -19,11 +25,10 @@ experience:
   end: today
   highlights:
   - Worked on a diverse range of projects across various domains, including Industry
-    4.0, fintech, education, and aerospace.
+    4.0, FinTech, education, and aerospace.
   - Did work on descriptive, predictive and prescriptive analytics.
   - Designed several ML systems using a wide array of algorithms, including XGBoost,
     VAEs and GRUs, or explainable models.
-  - Applied MLOps principles to the
   tools: Python, Jupyter, MLflow, TimescaleDB, PostgreSQL, pandas, scikit-learn, Tensorflow,
     XGBoost
   duration: 1 year & 5 months
@@ -40,7 +45,7 @@ experience:
   - Experience in mentoring junior team members, uploading and maintaining models
     in client's machines and Hyperparameter tuning with a HPC cluster.
   - Proficient in various neural network architectures and feature selection algorithms.
-  tools: Python, Jupyter, Tensorflow, pandas, BigQuery,
+  tools: Python, Jupyter, Tensorflow, pandas, BigQuery
   duration: 1 year & 9 months
 - jobtitle: ADAS Technician
   location: O Porriño, Pontevedra
@@ -54,7 +59,7 @@ experience:
     filters.
   - Gained junior-level \Cpp programming expertise in the context of 3D Computer Vision
     algorithms.
-  tools: \Cpp 11, CMake, Autosar, LiDAR, ParaView,
+  tools: \Cpp 11, CMake, Autosar, LiDAR, ParaView
   duration: 1 year & 2 months
 - jobtitle: Junior Researcher
   location: Zaragoza

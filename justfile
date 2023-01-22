@@ -1,14 +1,18 @@
-DATE := `LC_TIME=es_ES.UTF-8 date "+%b%Y"`
+DATE := `LC_TIME=en_US.UTF-8 date "+%b%Y"`
 JOBNAME := "AdrianBergesCV_" + DATE
 
-all: pptex makepdf
+all: makepdf
   mv ./cv.pdf ./{{JOBNAME}}.pdf
 
-makepdf:
-  tectonic src/cv.tex --outdir .
+makepdf: processyml
+  pandoc --defaults pandoc_defaults.yaml
 
-pptex:
-  racket src/zxp.scrbl > src/zxp.tex
+processyml:
+  python src/python/process_yaml_data.py
 
 get-fonts:
   sudo apt install fonts-vollkorn fonts-open-sans
+
+# Local Variables:
+# mode: makefile
+# End:
