@@ -1,6 +1,0 @@
-\cvitem
-    {$it.type$ $it.title$}
-    {$it.start$ -- $it.end$}
-    {$it.institution$}
-    {$it.location$}
-\vspace{10pt}

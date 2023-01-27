@@ -4,3 +4,7 @@
 * DONE hacer dummy.md en vez de cv.md
 * DONE añadir /tools/ a cvitem
 * TODO escribir filtro en vez de script, y meter varios yaml al comando :advanced:
+* TODO hacer html
+Es más difícil de lo que creo porque no es sólo el html generado a partir de Latex,
+habrá que añadir clases y cosas... lleva diseño
+* TODO añadir descarga CV a la pág.

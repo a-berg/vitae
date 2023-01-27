@@ -1,0 +1,34 @@
+\documentclass[a4]{article}
+
+\input{templates/latex/header}
+
+\begin{document}
+
+$personal:personal()$
+
+\section*{Experience}
+$experience:experience()$
+
+\section*{Education}
+
+$education.r:education()$
+
+\pseudosection{Other education}
+
+$education.o:education()$
+
+\section*{Skills}
+
+${ for(skills) }
+\subsection*{${ skills.header }}
+
+%% this is actually genius: lists can be "pasted" using [<sep>].
+\begin{tabularx}{\dimexpr\textwidth-0.5cm\relax}[t]{lX}
+  ${ for(skills.table) }
+  ${ skills.table[ & ] }\\
+  ${ endfor }
+\end{tabularx}
+
+${ endfor }
+
+\end{document}

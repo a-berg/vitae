@@ -1,0 +1,150 @@
+\documentclass[a4]{article}
+
+\input{templates/header}
+
+\begin{document}
+
+\begin{flushleft}
+    \begin{minipage}[t]{0.2\textwidth}
+        \vspace{0pt}
+        \includegraphics{./docs/PortraitCropped.jpg}
+    \end{minipage}
+    % \hspace{3mm}
+    \textsf{
+    \begin{minipage}[t]{0.65\textwidth}
+        \vspace{-3pt}
+        {\myName\LARGE\bfseries\uppercase{Adrián Berges
+Enfedaque}}\\[8pt]
+        \faEnvelope\ \    aberges@outlook.com\\[5pt]
+        \faPhone\ \      690 236 818\\[5pt]
+        \faMapMarker*\ \ \kern-0.05em Santiago de Compostela, A
+Coruña\\[5pt]
+        \faGlobe\ \ \href{https://a-berg.github.io/philambdapi/}{blog}\\[5pt]
+        \faLinkedinIn\ \  \href{http://www.linkedin.com/in/adrianberges/}{/in/adrianberges}\\[5pt]
+        \faGithub\ \      \href{http://www.github.com/a-berg}{a-berg}
+    \end{minipage}
+    }
+\end{flushleft}
+
+\section*{Experience}
+%% This is a template for pandoc usage
+\cvitem
+    {Researcher / Engineer}
+    {2021 -- today (1 year \& 5 months)}
+    {Gradiant}
+    {Vigo, Pontevedra}
+\begin{itemize}
+  \item Worked on a diverse range of projects across various domains,
+including Industry 4.0, FinTech, education, and aerospace.\item Did work
+on descriptive, predictive and prescriptive analytics.\item Designed
+several ML systems using a wide array of algorithms, including XGBoost,
+VAEs and GRUs, or explainable models.
+\end{itemize}
+
+\vspace{12pt}%% This is a template for pandoc usage
+\cvitem
+    {Research Technician}
+    {2019 -- 2021 (1 year \& 9 months)}
+    {Centro Singular de Investigación en Tecnoloxías Intelixentes}
+    {Santiago de Compostela, A Coruña}
+\begin{itemize}
+  \item Utilized neural networks (with Keras and Tensorflow) to model
+industrial processes as a mid-level developer.\item Participated in the
+implementation of prescriptive analytics to control and automate the one
+part of the process.\item Experience in mentoring junior team members,
+uploading and maintaining models in client's machines and Hyperparameter
+tuning with a HPC cluster.\item Proficient in various neural network
+architectures and feature selection algorithms.
+\end{itemize}
+
+\vspace{12pt}%% This is a template for pandoc usage
+\cvitem
+    {ADAS Technician}
+    {2018 -- 2019 (1 year \& 2 months)}
+    {Centro Tecnológico de Automoción de Galicia}
+    {O Porriño, Pontevedra}
+\begin{itemize}
+  \item Developed custom LiDAR point cloud segmentation
+algorithm.\item Successfully improved sensor
+performance.\item Entry-level knowledge in multi-object tracking and
+sensor fusion using Kalman filters.\item Gained junior-level
+\Cpp programming expertise in the context of 3D Computer Vision
+algorithms.
+\end{itemize}
+
+\vspace{12pt}%% This is a template for pandoc usage
+\cvitem
+    {Junior Researcher}
+    {2015 -- 2016 (1 year)}
+    {Universidad de Zaragoza}
+    {Zaragoza}
+\begin{itemize}
+  \item Implemented an algorithm in Matlab using dimensionality
+reduction techniques for a thermal-mechanical problem in a novel
+research setting as a junior.\item The implemented solution was orders
+of magnitude faster than commercial software.\item Worked under the
+guidance of mentors.\item Gained strong skills in Matlab, and
+understanding of how dimensionality reduction techniques can be applied
+to an industrial setting.
+\end{itemize}
+
+\vspace{12pt}
+
+\section*{Education}
+
+\cvitem
+    {MSc Industrial Mathematics}
+    {2016 -- 2018 }
+    {Universidade de Santiago de Compostela}
+    {Santiago de Compostela}
+\vspace{10pt}\\\cvitem
+    {BSc Mechanical Engineering}
+    {2010 -- 2015 }
+    {Universidad de Zaragoza}
+    {Zaragoza}
+\vspace{10pt}\\
+
+\pseudosection{Other education}
+
+\cvitem
+    {Probabilistic Deep Learning with Tensorflow 2}
+    {2020 -- 2020 (5 weeks)}
+    {Imperial College London via Coursera}
+    {Online}
+\vspace{10pt}\\\cvitem
+    {Machine Learning Engineering for Production (MLOps)}
+    {2021 -- 2022 (16 weeks)}
+    {DeepLearning.AI via Coursera}
+    {Online}
+\vspace{10pt}\\
+
+\section*{Skills}
+
+\subsection*{Languages}
+
+%% this is actually genius: lists can be "pasted" using [<sep>].
+\begin{tabular}[t]{ll}
+    Spanish & Native\\
+    English & CEFRL C1 (CAE)\\
+  \end{tabular}
+
+\subsection*{Soft skills}
+
+%% this is actually genius: lists can be "pasted" using [<sep>].
+\begin{tabular}[t]{ll}
+    Communication\\
+  \end{tabular}
+
+\subsection*{Technical skills}
+
+%% this is actually genius: lists can be "pasted" using [<sep>].
+\begin{tabular}[t]{ll}
+    Programming languages & Python, SQL, \Cpp, Matlab\\
+    Data Science \& Machine Learning & pandas, Tensorflow, scikit-learn,
+MLFlow, UMAP, Pytorch\\
+    Databases & PostgreSQL, DuckDB, TimescaleDB\\
+    Tools & git, Emacs, \LaTeX, pandoc\\
+  \end{tabular}
+
+
+\end{document}

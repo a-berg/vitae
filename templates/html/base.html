@@ -1,28 +1,23 @@
-\documentclass[a4]{article}
-
-\input{templates/header}
-
-\begin{document}
-
 $personal:personal()$
 
-\section*{Experience}
+<h1 class="unnumbered" id="experience">Experience</h1>
 $experience:experience()$
 
-\section*{Education}
+<h1 class="unnumbered" id="experience">Education</h1>
 
 $education.r:education()$
 
-\pseudosection{Other education}
+<p><br />
+<em>Other education</em></p>
 
 $education.o:education()$
 
-\section*{Skills}
+<h1 class="unnumbered" id="experience">Skills</h1>
 
 ${ for(skills) }
 \subsection*{${ skills.header }}
 
-%% this is actually genius: lists can be "pasted" using [<sep>].
+<!-- this is actually genius: lists can be "pasted" using [<sep>]. -->
 \begin{tabular}[t]{ll}
   ${ for(skills.table) }
   ${ skills.table[ & ] }\\
@@ -30,5 +25,3 @@ ${ for(skills) }
 \end{tabular}
 
 ${ endfor }
-
-\end{document}

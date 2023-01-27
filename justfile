@@ -5,7 +5,10 @@ all: makepdf
   mv ./cv.pdf ./{{JOBNAME}}.pdf
 
 makepdf: processyml
-  pandoc --defaults pandoc_defaults.yaml
+  pandoc --defaults pdf_defaults.yaml
+
+makeweb:
+  pandoc --defaults html_defaults.yaml
 
 processyml:
   python src/python/process_yaml_data.py

@@ -4,10 +4,14 @@
     - [English, CEFRL C1 (CAE)]
 - header: Soft skills
   table:
-    - ["Communication"]
+    - ["Communication", "I'm accustomed to convey information to stakeholders."]
+    - ["Teamwork", "Integrated my job in cross-functional teams."]
+    - ["Adaptability", "Have worked in several domains and project settings, quickly building productive relationships with team members and clients."]
+    - ["Attention to detail", "Very focused towards identifying and correcting errors and inconsistencies."]
+    - ["Methodic", "Tend to approach tasks and projects in a systematic and organized manner."]
 - header: Technical skills
   table:
     - ["Programming languages", "Python, SQL, \\Cpp, Matlab"]
-    - ["Data Science & Machine Learning", "pandas, Tensorflow, scikit-learn, MLFlow, UMAP, Pytorch"]
-    - ["Databases",  "PostgreSQL, DuckDB, TimescaleDB"]
-    - ["Tools", "git, Emacs, \\LaTeX, pandoc"]
+    - ["Data Science, ML & AI", "pandas, Tensorflow, scikit-learn, MLFlow, XGBoost, pola.rs, UMAP, Pytorch"]
+    - ["Databases",  "PostgreSQL, MySQL, DuckDB"]
+    - ["Tools", "git, JIRA, Emacs, \\LaTeX, pandoc"]

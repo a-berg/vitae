@@ -1,13 +1,15 @@
-- jobtitle: Researcher / Engineer
+- jobtitle: Data Scientist
   location: Vigo, Pontevedra
   company: Gradiant
   start: 2021-08-17
   end: now
   highlights:
-    - Worked on a diverse range of projects across various domains, including Industry 4.0, FinTech, education, and aerospace.
-    - Did work on descriptive, predictive and prescriptive analytics.
-    - Designed several ML systems using a wide array of algorithms, including XGBoost, VAEs and GRUs, or explainable models.
-  tools: Python, Jupyter, MLflow, TimescaleDB, PostgreSQL, pandas, scikit-learn, Tensorflow, XGBoost
+    # - Worked on a diverse range of projects across various domains, including Industry 4.0, FinTech, education, and aerospace.
+    - Designed ML systems using a wide array of techniques, including XGBoost, VAEs and GRUs, or explainable models.
+    - Conducted data analytics on client data, communicated results and findings directly with clients.
+    - Provided clean datasets to teammates through a combined usage of SQL and Python.
+    - Utilized MLFlow to manage experiments, models and coordinate efforts with teammates, and helped implement MLOps within the company.
+  # tools: Python, Jupyter, MLflow, pandas, scikit-learn, Tensorflow, XGBoost, PostgreSQL
 
 - jobtitle: Research Technician
   location: Santiago de Compostela, A Coruña
@@ -19,7 +21,7 @@
     - Participated in the implementation of prescriptive analytics to control and automate the one part of the process.
     - Experience in mentoring junior team members, uploading and maintaining models in client's machines and Hyperparameter tuning with a HPC cluster.
     - Proficient in various neural network architectures and feature selection algorithms.
-  tools: Python, Jupyter, Tensorflow, pandas, BigQuery
+  # tools: Python, Jupyter, Tensorflow, pandas, BigQuery
 
 - jobtitle: ADAS Technician
   location: O Porriño, Pontevedra
@@ -31,7 +33,7 @@
     - Successfully improved sensor performance.
     - Entry-level knowledge in multi-object tracking and sensor fusion using Kalman filters.
     - Gained junior-level \Cpp programming expertise in the context of 3D Computer Vision algorithms.
-  tools: \Cpp 11, CMake, Autosar, LiDAR, ParaView
+  # tools: \Cpp 11, CMake, Autosar, LiDAR, ParaView
 
 - jobtitle: Junior Researcher
   location: Zaragoza
@@ -43,4 +45,4 @@
     - The implemented solution was orders of magnitude faster than commercial software.
     - Worked under the guidance of mentors.
     - Gained strong skills in Matlab, and understanding of how dimensionality reduction techniques can be applied to an industrial setting.
-  tools: Matlab, ANSYS, ParaView
+  # tools: Matlab, ANSYS, ParaView

@@ -2,7 +2,7 @@ personal:
   portrait: ./docs/PortraitCropped.jpg
   name: Adrián Berges Enfedaque
   mail: aberges@outlook.com
-  phone: 690 236 818
+  phone: (+34) 690 236 818
   location: Santiago de Compostela, A Coruña
   links:
     linkedin:
@@ -18,19 +18,19 @@ personal:
       display: blog
       faicon: faGlobe
 experience:
-- jobtitle: Researcher / Engineer
+- jobtitle: Data Scientist
   location: Vigo, Pontevedra
   company: Gradiant
   start: '2021'
   end: today
   highlights:
-  - Worked on a diverse range of projects across various domains, including Industry
-    4.0, FinTech, education, and aerospace.
-  - Did work on descriptive, predictive and prescriptive analytics.
-  - Designed several ML systems using a wide array of algorithms, including XGBoost,
-    VAEs and GRUs, or explainable models.
-  tools: Python, Jupyter, MLflow, TimescaleDB, PostgreSQL, pandas, scikit-learn, Tensorflow,
-    XGBoost
+  - Designed ML systems using a wide array of techniques, including XGBoost, VAEs
+    and GRUs, or explainable models.
+  - Conducted data analytics on client data, communicated results and findings directly
+    with clients.
+  - Provided clean datasets to teammates through a combined usage of SQL and Python.
+  - Utilized MLFlow to manage experiments, models and coordinate efforts with teammates,
+    and helped implement MLOps within the company.
   duration: 1 year & 5 months
 - jobtitle: Research Technician
   location: Santiago de Compostela, A Coruña
@@ -45,7 +45,6 @@ experience:
   - Experience in mentoring junior team members, uploading and maintaining models
     in client's machines and Hyperparameter tuning with a HPC cluster.
   - Proficient in various neural network architectures and feature selection algorithms.
-  tools: Python, Jupyter, Tensorflow, pandas, BigQuery
   duration: 1 year & 9 months
 - jobtitle: ADAS Technician
   location: O Porriño, Pontevedra
@@ -59,7 +58,6 @@ experience:
     filters.
   - Gained junior-level \Cpp programming expertise in the context of 3D Computer Vision
     algorithms.
-  tools: \Cpp 11, CMake, Autosar, LiDAR, ParaView
   duration: 1 year & 2 months
 - jobtitle: Junior Researcher
   location: Zaragoza
@@ -73,7 +71,6 @@ experience:
   - Worked under the guidance of mentors.
   - Gained strong skills in Matlab, and understanding of how dimensionality reduction
     techniques can be applied to an industrial setting.
-  tools: Matlab, ANSYS, ParaView
   duration: 1 year
 education:
   r:
@@ -112,13 +109,23 @@ skills:
 - header: Soft skills
   table:
   - - Communication
+    - I'm accustomed to convey information to stakeholders.
+  - - Teamwork
+    - Integrated my job in cross-functional teams.
+  - - Adaptability
+    - Have worked in several domains and project settings, quickly building productive
+      relationships with team members and clients.
+  - - Attention to detail
+    - Very focused towards identifying and correcting errors and inconsistencies.
+  - - Methodic
+    - Tend to approach tasks and projects in a systematic and organized manner.
 - header: Technical skills
   table:
   - - Programming languages
     - Python, SQL, \Cpp, Matlab
-  - - Data Science & Machine Learning
-    - pandas, Tensorflow, scikit-learn, MLFlow, UMAP, Pytorch
+  - - Data Science, ML & AI
+    - pandas, Tensorflow, scikit-learn, MLFlow, XGBoost, pola.rs, UMAP, Pytorch
   - - Databases
-    - PostgreSQL, DuckDB, TimescaleDB
+    - PostgreSQL, MySQL, DuckDB
   - - Tools
-    - git, Emacs, \LaTeX, pandoc
+    - git, JIRA, Emacs, \LaTeX, pandoc

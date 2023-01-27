@@ -4,8 +4,8 @@
     {${it.start} -- ${it.end} (${it.duration})}
     {${it.company}}
     {${it.location}}
-\begin{itemize}
+\begin{enumerate}[label=\textbullet, itemsep=-1pt, rightmargin=0.5cm]
   \item ${ it.highlights[\item ] }
-\end{itemize}
-\textit{\textbf{Tools used}: ${ it.tools }.}
-\vspace{12pt}\\
+\end{enumerate}
+${ if(it.tools) }\textit{\textbf{Tools used}: ${ it.tools }.}\\${ endif }
+\vspace{12pt}
