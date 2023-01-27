@@ -1,0 +1,13 @@
+name: compile pdf
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: compile PDF using pandoc.
+        uses: docker://pandoc/latex:2.17.1.1
+        with:
+          args: >-  # allows you to break string into multiple lines
+            --defaults pdf_defaults.yaml
