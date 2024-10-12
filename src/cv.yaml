@@ -22,66 +22,69 @@ experience:
   location: Vigo, Pontevedra
   company: Gradiant
   start: '2021'
-  end: today
+  end: actualidad
   highlights:
-  - Designed ML systems using a wide array of techniques, including XGBoost, VAEs
-    and GRUs, or explainable models.
-  - Conducted data analytics on client data, communicated results and findings directly
-    with clients.
-  - Provided clean datasets to teammates through a combined usage of SQL and Python.
-  - Utilized MLFlow to manage experiments, models and coordinate efforts with teammates,
-    and helped implement MLOps within the company.
-  duration: 1 year & 5 months
-- jobtitle: Research Technician
+  - Diseño de sistemas de ML con varias técnicas, incluyendo XGBoost, VAEs y GRUs
+    o modelos explicables.
+  - Comunicación de resultados y hallazgos directamente con el cliente.
+  - Participación en proyectos de diversos sectores, como Industria 4.0, eLearning
+    o retail.
+  - Uso de herramientas de MLOps como MLFlow o DVC, para gestión de datasets, experimentos
+    y modelos.
+  - Participación en proyectos de MLOps, contribuyendo al diseño e implementación
+    de plataforma MLOps para cliente.
+  duration: 2 años & 9 meses
+- jobtitle: Técnico de Investigación
   location: Santiago de Compostela, A Coruña
   company: Centro Singular de Investigación en Tecnoloxías Intelixentes
   start: '2019'
   end: '2021'
   highlights:
-  - Utilized neural networks (with Keras and Tensorflow) to model industrial processes
-    as a mid-level developer.
-  - Participated in the implementation of prescriptive analytics to control and automate
-    the one part of the process.
-  - Experience in mentoring junior team members, uploading and maintaining models
-    in client's machines and Hyperparameter tuning with a HPC cluster.
-  - Proficient in various neural network architectures and feature selection algorithms.
-  duration: 1 year & 9 months
-- jobtitle: ADAS Technician
+  - Uso de redes neuronales (con Keras y Tensorflow) para modelar procesos industriales.
+  - Participación en la implementación de algoritmos prescriptivos para controlar
+    y automatizar una parte del proceso.
+  - Experiencia en la integración de miembros junior del equipo, carga y mantenimiento
+    de modelos en las máquinas del cliente y ajuste de hiperparámetros en un clúster
+    HPC.
+  - Dominio de diversas arquitecturas de redes neuronales y algoritmos de selección
+    de características.
+  duration: 1 año & 9 meses
+- jobtitle: Técnico ADAS
   location: O Porriño, Pontevedra
   company: Centro Tecnológico de Automoción de Galicia
   start: '2018'
   end: '2019'
   highlights:
-  - Developed custom LiDAR point cloud segmentation algorithm.
-  - Successfully improved sensor performance.
-  - Entry-level knowledge in multi-object tracking and sensor fusion using Kalman
-    filters.
-  - Gained junior-level \Cpp programming expertise in the context of 3D Computer Vision
-    algorithms.
-  duration: 1 year & 2 months
-- jobtitle: Junior Researcher
+  - Desarrollo de un algoritmo personalizado de segmentación de nubes de puntos LiDAR.
+  - Éxito en la mejora del rendimiento del sensor.
+  - Conocimientos básicos de seguimiento multiobjeto y fusión de sensores mediante
+    filtros de Kalman.
+  - Adquisición de conocimientos de programación \Cpp de nivel junior en el contexto
+    de algoritmos de visión por ordenador 3D.
+  duration: 1 año & 2 meses
+- jobtitle: Investigador Junior
   location: Zaragoza
   company: Universidad de Zaragoza
   start: '2015'
   end: '2016'
   highlights:
-  - Implemented an algorithm in Matlab using dimensionality reduction techniques for
-    a thermal-mechanical problem in a novel research setting as a junior.
-  - The implemented solution was orders of magnitude faster than commercial software.
-  - Worked under the guidance of mentors.
-  - Gained strong skills in Matlab, and understanding of how dimensionality reduction
-    techniques can be applied to an industrial setting.
-  duration: 1 year
+  - Implementación de un algoritmo en Matlab utilizando técnicas de reducción de dimensionalidad
+    para un problema termomecánico en un entorno de investigación como junior.
+  - La solución implementada fue órdenes de magnitud más rápida que el software comercial.
+  - Trabajo realizado bajo la dirección de mentores.
+  - Adquisición de sólidos conocimientos de Matlab y sobre cómo pueden aplicarse las
+    técnicas de reducción de dimensionalidad a un problema industrial.
+  duration: 1 año
 education:
   r:
-  - title: Industrial Mathematics
-    type: MSc
+  - title: Matemática Industrial
+    type: Máster en
     location: Santiago de Compostela
     institution: Universidade de Santiago de Compostela
     start: 2016
     end: 2018
-  - title: Mechanical Engineering
-    type: BSc
+  - title: Ingeniería Mecánica
+    type: Grado en
     location: Zaragoza
     institution: Universidad de Zaragoza
     start: 2010
@@ -92,40 +95,48 @@ education:
     institution: Imperial College London via Coursera
     start: 2020
     end: 2020
-    duration: 5 weeks
+    duration: 5 semanas
   - title: Machine Learning Engineering for Production (MLOps)
     location: Online
     institution: DeepLearning.AI via Coursera
     start: 2021
     end: 2022
-    duration: 16 weeks
+    duration: 16 semanas
+  - title: Microsoft Azure Data Scientist Associate Professional Certificate
+    location: Online
+    institution: Microsoft via Coursera
+    start: 2023
+    end: en curso
+    duration: N/A
 skills:
-- header: Languages
+- header: Idiomas
   table:
-  - - Spanish
-    - Native
-  - - English
+  - - Español
+    - Nativo
+  - - Inglés
     - CEFRL C1 (CAE)
-- header: Soft skills
+- header: Competencias suaves
   table:
-  - - Communication
-    - I'm accustomed to convey information to stakeholders.
-  - - Teamwork
-    - Integrated my job in cross-functional teams.
-  - - Adaptability
-    - Have worked in several domains and project settings, quickly building productive
-      relationships with team members and clients.
-  - - Attention to detail
-    - Very focused towards identifying and correcting errors and inconsistencies.
-  - - Methodic
-    - Tend to approach tasks and projects in a systematic and organized manner.
-- header: Technical skills
+  - - Comunicación
+    - Acostumbrado a transmitir la información a los stakeholders.
+  - - Trabajo en equipo
+    - He desarrollado mi trabajo en equipos multidisciplinares.
+  - - Adaptabilidad
+    - He trabajado en varios sectores y tipos de proyectos, creando de forma rápida
+      relaciones productivas con miembros del equipo y clientes.
+  - - Atención al detalle
+    - Muy enfocado a la identificación y corrección de errores e inconsistencias.
+  - - Metódico
+    - Enfoque de las tareas y proyectos de forma sistemática y organizada.
+- header: Competencias técnicas
   table:
-  - - Programming languages
+  - - Lenguajes de programación
     - Python, SQL, \Cpp, Matlab
   - - Data Science, ML & AI
-    - pandas, Tensorflow, scikit-learn, MLFlow, XGBoost, pola.rs, UMAP, Pytorch
-  - - Databases
+    - pandas, Tensorflow, scikit-learn, XGBoost, pola.rs, UMAP, Pytorch
+  - - MLOps & Cloud
+    - MLFlow, Azure, Kubernetes, Docker, Flyte, Airflow, Argo
+  - - Bases de datos
     - PostgreSQL, MySQL, DuckDB
-  - - Tools
-    - git, JIRA, Emacs, \LaTeX, pandoc
+  - - Otras herramientas
+    - git, JIRA, \LaTeX, pandoc

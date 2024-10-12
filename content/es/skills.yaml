@@ -1,0 +1,18 @@
+- header: Idiomas
+  table:
+    - [Español, Nativo]
+    - [Inglés, CEFRL C1 (CAE)]
+- header: Competencias suaves
+  table:
+    - ["Comunicación", "Acostumbrado a transmitir la información a los stakeholders."]
+    - ["Trabajo en equipo", "He desarrollado mi trabajo en equipos multidisciplinares."]
+    - ["Adaptabilidad", "He trabajado en varios sectores y tipos de proyectos, creando de forma rápida relaciones productivas con miembros del equipo y clientes."]
+    - ["Atención al detalle","Muy enfocado a la identificación y corrección de errores e inconsistencias."]
+    - ["Metódico", "Enfoque de las tareas y proyectos de forma sistemática y organizada."]
+- header: Competencias técnicas
+  table:
+    - ["Lenguajes de programación", "Python, SQL, \\Cpp, Matlab"]
+    - ["Data Science, ML & AI", "pandas, Tensorflow, scikit-learn, XGBoost, pola.rs, UMAP, Pytorch"]
+    - ["MLOps & Cloud", "MLFlow, Azure, Kubernetes, Docker, Flyte, Airflow, Argo"]
+    - ["Bases de datos",  "PostgreSQL, MySQL, DuckDB"]
+    - ["Otras herramientas", "git, JIRA, \\LaTeX, pandoc"]

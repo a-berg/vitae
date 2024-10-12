@@ -1,0 +1,32 @@
+r:
+  - title: Matemática Industrial
+    type: Máster en
+    location: Santiago de Compostela
+    institution: Universidade de Santiago de Compostela
+    start: 2016
+    end: 2018
+  - title: Ingeniería Mecánica
+    type: Grado en
+    location: Zaragoza
+    institution: Universidad de Zaragoza
+    start: 2010
+    end: 2015
+o:
+  - title: Probabilistic Deep Learning with Tensorflow 2
+    location: Online
+    institution: Imperial College London via Coursera
+    start: 2020
+    end: 2020
+    duration: 5 semanas
+  - title: Machine Learning Engineering for Production (MLOps)
+    location: Online
+    institution: DeepLearning.AI via Coursera
+    start: 2021
+    end: 2022
+    duration: 16 semanas
+  - title: Microsoft Azure Data Scientist Associate Professional Certificate
+    location: Online
+    institution: Microsoft via Coursera
+    start: 2023
+    end: en curso
+    duration: N/A

@@ -11,10 +11,15 @@ makeweb:
   pandoc --defaults html_defaults.yaml
 
 processyml:
-  python src/python/process_yaml_data.py
+  # python3 src/python/process_yaml_data.py
+  pdm run python3 -m src.python.process_yaml_data
 
 get-fonts:
   sudo apt install fonts-vollkorn fonts-open-sans
+
+pdm-init:
+  pdm init
+  pdm sync
 
 # Local Variables:
 # mode: makefile

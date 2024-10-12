@@ -1,0 +1,48 @@
+- jobtitle: Data Scientist
+  location: Vigo, Pontevedra
+  company: Gradiant
+  start: 2021-08-17
+  end: now
+  highlights:
+    - Diseño de sistemas de ML con varias técnicas, incluyendo XGBoost, VAEs y GRUs o modelos explicables.
+    - Comunicación de resultados y hallazgos directamente con el cliente.
+    - Participación en proyectos de diversos sectores, como Industria 4.0, eLearning o retail.
+    - Uso de herramientas de MLOps como MLFlow o DVC, para gestión de datasets, experimentos y modelos.
+    - Participación en proyectos de MLOps, contribuyendo al diseño e implementación de plataforma MLOps para cliente.
+  # tools: Python, Jupyter, MLflow, pandas, scikit-learn, Tensorflow, XGBoost, PostgreSQL
+
+- jobtitle: Técnico de Investigación
+  location: Santiago de Compostela, A Coruña
+  company: Centro Singular de Investigación en Tecnoloxías Intelixentes
+  start: 2019-10-15
+  end: 2021-08-10
+  highlights:
+    - Uso de redes neuronales (con Keras y Tensorflow) para modelar procesos industriales.
+    - Participación en la implementación de algoritmos prescriptivos para controlar y automatizar una parte del proceso.
+    - Experiencia en la integración de miembros junior del equipo, carga y mantenimiento de modelos en las máquinas del cliente y ajuste de hiperparámetros en un clúster HPC.
+    - Dominio de diversas arquitecturas de redes neuronales y algoritmos de selección de características.
+  # tools: Python, Jupyter, Tensorflow, pandas, BigQuery
+
+- jobtitle: Técnico ADAS
+  location: O Porriño, Pontevedra
+  company: Centro Tecnológico de Automoción de Galicia
+  start: 2018-08-10
+  end: 2019-10-10
+  highlights:
+    - Desarrollo de un algoritmo personalizado de segmentación de nubes de puntos LiDAR.
+    - Éxito en la mejora del rendimiento del sensor.
+    - Conocimientos básicos de seguimiento multiobjeto y fusión de sensores mediante filtros de Kalman.
+    - Adquisición de conocimientos de programación \Cpp de nivel junior en el contexto de algoritmos de visión por ordenador 3D.
+  # tools: \Cpp 11, CMake, Autosar, LiDAR, ParaView
+
+- jobtitle: Investigador Junior
+  location: Zaragoza
+  company: Universidad de Zaragoza
+  start: 2015-09-04
+  end: 2016-09-04
+  highlights:
+    - Implementación de un algoritmo en Matlab utilizando técnicas de reducción de dimensionalidad para un problema termomecánico en un entorno de investigación como junior.
+    - La solución implementada fue órdenes de magnitud más rápida que el software comercial.
+    - Trabajo realizado bajo la dirección de mentores.
+    - Adquisición de sólidos conocimientos de Matlab y sobre cómo pueden aplicarse las técnicas de reducción de dimensionalidad a un problema industrial.
+  # tools: Matlab, ANSYS, ParaView
