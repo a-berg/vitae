@@ -4,11 +4,14 @@
   start: 2021-08-17
   end: now
   highlights:
-    # - Worked on a diverse range of projects across various domains, including Industry 4.0, FinTech, education, and aerospace.
-    - Designed ML systems using a wide array of techniques, including XGBoost, VAEs and GRUs, or explainable models.
-    - Conducted data analytics on client data, communicated results and findings directly with clients.
-    - Provided clean datasets to teammates through a combined usage of SQL and Python.
-    - Utilized MLFlow to manage experiments, models and coordinate efforts with teammates, and helped implement MLOps within the company.
+    - Solved ML problems with time series and tabular data, using Deep Learning, Gradient Boosting, or Reinforcement Learning (among others).
+    - Performed extensive with data analysis in Python.
+    - Experienced in MLOps and ML Engineering, such as experiment tracking, model deployment and versioning. I also was an early member of the then-emerging AI&Data Ops team.
+    - Work with cloud technologies, particularly Kubernetes and Spark.
+    - Recently, had the opportunity to manage a team of three developers in a project management role.
+    - Mentored junior data scientists at my company, emphasizing software design principles and effective use of ML and MLOps tools.
+    - Organized and led coding-dojos on diverse topics such as an introduction to pola.rs, Julia, or functional programming techniques in Python.
+    - Delivered a guest lecture to third-year Artificial Intelligence BSc students at the University of Santiago de Compostela, providing an introduction to industry applications in Industry 4.0.
   # tools: Python, Jupyter, MLflow, pandas, scikit-learn, Tensorflow, XGBoost, PostgreSQL
 
 - jobtitle: Research Technician
