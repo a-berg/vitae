@@ -1,7 +1,80 @@
 \documentclass[a4]{article}
 
-\input{templates/header}
+% \input{templates/latex/header}
+\usepackage[margin=15mm]{geometry}
+\usepackage{graphicx}
+\usepackage[fixed]{fontawesome5}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[ocgcolorlinks]{hyperref}
+\usepackage[spanish]{babel}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{tabularx}
 
+\setlength{\parindent}{0pt}
+% small hack for tables
+\newcommand*{\toprule}[1][]{}
+\newcommand*{\bottomrule}[1][]{}
+\newcommand*{\midrule}[1][]{}
+%% \setlength{\LTleft}{1em}
+%% \setlength{\LTpre}{0pt}
+%% \setlength{\LTpost}{0pt}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=cyan,
+}
+\titleformat{name=\section,numberless}[block]
+  {\titlerule\addvspace{2pt}\sffamily\fontsize{9}{11}}
+  {}{0pt}{\addfontfeature{LetterSpace=4.0}\uppercase}
+
+%% \titlespacing\subsection{0pt}{2pt plus 4pt minus 2pt}{0pt}
+% \titleformat{name=\subsection,numberless}[block]
+%   {\titlerule\addvspace{2pt}\sffamily\fontsize{7}{9}}
+%   {}{0pt}{\addfontfeature{LetterSpace=4.0}\textit}
+
+\setmainfont[
+    Numbers={Monospaced,Uppercase},
+    BoldFont=Vollkorn SemiBold]{Vollkorn Regular}
+\setsansfont{Open Sans}
+% \setmonofont{Iosevka SS04}
+\newfontfamily{\myName}{Open Sans}[
+    LetterSpace=10, WordSpace=3
+]
+
+\setitemize{itemsep=-1pt}
+
+\newcommand{\cvitem}[4]{
+    \noindent
+    \textbf{\large #1}  \hfill {\small #2} \newline
+    \textit{#3}         \hfill #4
+}
+
+\newcommand{\projitem}[3]{
+    \noindent
+    \textbf{\large #1} con {\small #2} \vspace{2pt}\newline
+    #3
+    \vspace{8pt}
+}
+
+\newcommand{\pseudosection}[1]{
+  % A subsection, but not really
+    \noindent
+    \textit{\sffamily{#1}}
+    
+    \vspace{6pt}
+}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\textbullet}}$}
+\def\Cpp{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.1ex}{++}}}
+
+
+\fancyhead[R]{\sffamily\footnotesize Actualizado el \today}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
 \begin{document}
 
 \begin{flushleft}
@@ -16,30 +89,40 @@
         {\myName\LARGE\bfseries\uppercase{Adrián Berges
 Enfedaque}}\\[8pt]
         \faEnvelope\ \    aberges@outlook.com\\[5pt]
-        \faPhone\ \      690 236 818\\[5pt]
+        \faPhone\ \      (+34) 690 236 818\\[5pt]
         \faMapMarker*\ \ \kern-0.05em Santiago de Compostela, A
 Coruña\\[5pt]
-        \faGlobe\ \ \href{https://a-berg.github.io/philambdapi/}{blog}\\[5pt]
+        % \faGlobe\ \ \href{https://a-berg.github.io/philambdapi/}{blog}\\[5pt]
         \faLinkedinIn\ \  \href{http://www.linkedin.com/in/adrianberges/}{/in/adrianberges}\\[5pt]
         \faGithub\ \      \href{http://www.github.com/a-berg}{a-berg}
     \end{minipage}
     }
 \end{flushleft}
 
-\section*{Experience}
+\section*{Experiencia}
 %% This is a template for pandoc usage
 \cvitem
-    {Researcher / Engineer}
-    {2021 -- today (1 year \& 5 months)}
+    {Data Scientist}
+    {2021 -- now (3 years \& 2 months)}
     {Gradiant}
     {Vigo, Pontevedra}
-\begin{itemize}
-  \item Worked on a diverse range of projects across various domains,
-including Industry 4.0, FinTech, education, and aerospace.\item Did work
-on descriptive, predictive and prescriptive analytics.\item Designed
-several ML systems using a wide array of algorithms, including XGBoost,
-VAEs and GRUs, or explainable models.
-\end{itemize}
+\begin{enumerate}[label=\textbullet, itemsep=-1pt, rightmargin=0.5cm]
+  \item Solved ML problems with time series and tabular data, using Deep
+Learning, Gradient Boosting, or Reinforcement Learning (among
+others).\item Performed extensive data analysis in
+Python.\item Experienced in MLOps and ML Engineering, such as experiment
+tracking, model deployment and versioning. I also was an early member of
+the then-emerging AI\&Data Ops team.\item Work with cloud technologies,
+particularly Kubernetes, Airflow and Spark.\item Recently, had the
+opportunity to manage a team of three developers in a project management
+role.\item Mentored junior data scientists at my company, emphasizing
+software design principles and effective use of ML and MLOps
+tools.\item Organized and led coding-dojos on diverse topics such as an
+introduction to pola.rs, Julia, or functional programming techniques in
+Python.\item Delivered a guest lecture to third-year Artificial
+Intelligence BSc students at the University of Santiago de Compostela,
+providing an introduction to industry applications in Industry 4.0.
+\end{enumerate}
 
 \vspace{12pt}%% This is a template for pandoc usage
 \cvitem
@@ -47,7 +130,7 @@ VAEs and GRUs, or explainable models.
     {2019 -- 2021 (1 year \& 9 months)}
     {Centro Singular de Investigación en Tecnoloxías Intelixentes}
     {Santiago de Compostela, A Coruña}
-\begin{itemize}
+\begin{enumerate}[label=\textbullet, itemsep=-1pt, rightmargin=0.5cm]
   \item Utilized neural networks (with Keras and Tensorflow) to model
 industrial processes as a mid-level developer.\item Participated in the
 implementation of prescriptive analytics to control and automate the one
@@ -55,7 +138,7 @@ part of the process.\item Experience in mentoring junior team members,
 uploading and maintaining models in client's machines and Hyperparameter
 tuning with a HPC cluster.\item Proficient in various neural network
 architectures and feature selection algorithms.
-\end{itemize}
+\end{enumerate}
 
 \vspace{12pt}%% This is a template for pandoc usage
 \cvitem
@@ -63,14 +146,14 @@ architectures and feature selection algorithms.
     {2018 -- 2019 (1 year \& 2 months)}
     {Centro Tecnológico de Automoción de Galicia}
     {O Porriño, Pontevedra}
-\begin{itemize}
+\begin{enumerate}[label=\textbullet, itemsep=-1pt, rightmargin=0.5cm]
   \item Developed custom LiDAR point cloud segmentation
 algorithm.\item Successfully improved sensor
 performance.\item Entry-level knowledge in multi-object tracking and
 sensor fusion using Kalman filters.\item Gained junior-level
 \Cpp programming expertise in the context of 3D Computer Vision
 algorithms.
-\end{itemize}
+\end{enumerate}
 
 \vspace{12pt}%% This is a template for pandoc usage
 \cvitem
@@ -78,7 +161,7 @@ algorithms.
     {2015 -- 2016 (1 year)}
     {Universidad de Zaragoza}
     {Zaragoza}
-\begin{itemize}
+\begin{enumerate}[label=\textbullet, itemsep=-1pt, rightmargin=0.5cm]
   \item Implemented an algorithm in Matlab using dimensionality
 reduction techniques for a thermal-mechanical problem in a novel
 research setting as a junior.\item The implemented solution was orders
@@ -86,11 +169,11 @@ of magnitude faster than commercial software.\item Worked under the
 guidance of mentors.\item Gained strong skills in Matlab, and
 understanding of how dimensionality reduction techniques can be applied
 to an industrial setting.
-\end{itemize}
+\end{enumerate}
 
 \vspace{12pt}
 
-\section*{Education}
+\section*{Educación}
 
 \cvitem
     {MSc Industrial Mathematics}
@@ -104,7 +187,7 @@ to an industrial setting.
     {Zaragoza}
 \vspace{10pt}\\
 
-\pseudosection{Other education}
+\pseudosection{Educación no reglada}
 
 \cvitem
     {Probabilistic Deep Learning with Tensorflow 2}
@@ -118,33 +201,43 @@ to an industrial setting.
     {Online}
 \vspace{10pt}\\
 
-\section*{Skills}
+\section*{Habilidades}
 
 \subsection*{Languages}
 
 %% this is actually genius: lists can be "pasted" using [<sep>].
-\begin{tabular}[t]{ll}
+\begin{tabularx}{\dimexpr\textwidth-0.5cm\relax}[t]{lX}
     Spanish & Native\\
     English & CEFRL C1 (CAE)\\
-  \end{tabular}
+  \end{tabularx}
 
 \subsection*{Soft skills}
 
 %% this is actually genius: lists can be "pasted" using [<sep>].
-\begin{tabular}[t]{ll}
-    Communication\\
-  \end{tabular}
+\begin{tabularx}{\dimexpr\textwidth-0.5cm\relax}[t]{lX}
+    Communication & I'm accustomed to convey information to
+stakeholders. Can explain complex topics in a simple manner.\\
+    Teamwork & Integrated my job in cross-functional teams.\\
+    Adaptability & Have worked in several domains and project settings,
+quickly building productive relationships with team members and
+clients.\\
+    Attention to detail & Very focused towards identifying and
+correcting errors and inconsistencies.\\
+    Methodic & Tend to approach tasks and projects in a systematic and
+organized manner.\\
+  \end{tabularx}
 
 \subsection*{Technical skills}
 
 %% this is actually genius: lists can be "pasted" using [<sep>].
-\begin{tabular}[t]{ll}
+\begin{tabularx}{\dimexpr\textwidth-0.5cm\relax}[t]{lX}
     Programming languages & Python, SQL, \Cpp, Matlab\\
-    Data Science \& Machine Learning & pandas, Tensorflow, scikit-learn,
-MLFlow, UMAP, Pytorch\\
-    Databases & PostgreSQL, DuckDB, TimescaleDB\\
-    Tools & git, Emacs, \LaTeX, pandoc\\
-  \end{tabular}
+    Data Science, ML \& AI & pandas, Tensorflow, scikit-learn, MLFlow,
+XGBoost, pola.rs, UMAP, Pytorch, DTW\\
+    Databases & PostgreSQL, MySQL, DuckDB\\
+    Cloud technologies & Kubernetes, Airflow, Spark\\
+    Tools & git, JIRA, Emacs, \LaTeX, pandoc\\
+  \end{tabularx}
 
 
 \end{document}

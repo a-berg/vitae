@@ -1,18 +1,21 @@
+lang := "en"
+name := "AdrianBergesCV"
 DATE := `LC_TIME=en_US.UTF-8 date "+%b%Y"`
-JOBNAME := "AdrianBergesCV_" + DATE
+JOBNAME := name + "_" + DATE
+DOCUMENTS := "~/Documents/cv/"
 
 all: makepdf
-  mv ./cv.pdf ./{{JOBNAME}}.pdf
+  mv ./cv.pdf ./{{JOBNAME}}_{{lang}}.pdf
+  cp ./{{JOBNAME}}_{{lang}}.pdf {{DOCUMENTS}}
 
 makepdf: processyml
-  pandoc --defaults pdf_defaults.yaml
+  pandoc --defaults pdf_defaults.yaml -V lang_es={{ if lang == "es" { "true" } else { "" } }}
 
-makeweb:
-  pandoc --defaults html_defaults.yaml
+makeweb: processyml
+  pandoc --defaults html_defaults.yaml -V lang_es={{ if lang == "es" { "true" } else { "" } }}
 
 processyml:
-  # python3 src/python/process_yaml_data.py
-  pdm run python3 -m src.python.process_yaml_data
+  pdm run python3 -m src.python.process_yaml_data -L {{lang}}
 
 get-fonts:
   sudo apt install fonts-vollkorn fonts-open-sans
@@ -20,7 +23,3 @@ get-fonts:
 pdm-init:
   pdm init
   pdm sync
-
-# Local Variables:
-# mode: makefile
-# End:

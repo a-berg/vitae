@@ -5,9 +5,9 @@
   end: now
   highlights:
     - Solved ML problems with time series and tabular data, using Deep Learning, Gradient Boosting, or Reinforcement Learning (among others).
-    - Performed extensive with data analysis in Python.
+    - Performed extensive data analysis in Python.
     - Experienced in MLOps and ML Engineering, such as experiment tracking, model deployment and versioning. I also was an early member of the then-emerging AI&Data Ops team.
-    - Work with cloud technologies, particularly Kubernetes and Spark.
+    - Work with cloud technologies, particularly Kubernetes, Airflow and Spark.
     - Recently, had the opportunity to manage a team of three developers in a project management role.
     - Mentored junior data scientists at my company, emphasizing software design principles and effective use of ML and MLOps tools.
     - Organized and led coding-dojos on diverse topics such as an introduction to pola.rs, Julia, or functional programming techniques in Python.

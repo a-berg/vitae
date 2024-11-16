@@ -1,23 +1,39 @@
 \documentclass[a4]{article}
 
-\input{templates/latex/header}
+$header()$
 
 \begin{document}
 
 $personal:personal()$
 
+$if(lang_es)$
 \section*{Experiencia}
+$else$
+\section*{Experience}
+$endif$
 $experience:experience()$
 
+$if(lang_es)$
 \section*{Educación}
+$else$
+\section*{Education}
+$endif$
 
 $education.r:education()$
 
+$if(lang_es)$
 \pseudosection{Educación no reglada}
+$else$
+\pseudosection{Other education}
+$endif$
 
 $education.o:education()$
 
+$if(lang_es)$
 \section*{Habilidades}
+$else$
+\section*{Skills}
+$endif$
 
 ${ for(skills) }
 \subsection*{${ skills.header }}

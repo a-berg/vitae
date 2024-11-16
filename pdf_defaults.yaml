@@ -2,7 +2,5 @@ input-file: src/dummy.md
 output-file: cv.pdf
 metadata-files:
   - src/cv.yaml
-  # - content/personal.yaml
-  # - content/en/experience.yaml
 template: templates/latex/base.tex
 pdf-engine: xelatex

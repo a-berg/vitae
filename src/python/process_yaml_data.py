@@ -4,11 +4,16 @@ from omegaconf import OmegaConf
 
 from .date_logic import DateInterval, CVDateInterval
 
+import argparse as arg
+
 
 def main():
+    parser = arg.ArgumentParser()
+    parser.add_argument("-L", "--lang", default="es")
+    parsed_args = parser.parse_args()
     content = Path("./content")
     sections = ("experience", "education", "skills")
-    language = "es"
+    language = parsed_args.lang
     data = OmegaConf.create(
         dict(
             (s, OmegaConf.load((content / language / s).with_suffix(".yaml")))
