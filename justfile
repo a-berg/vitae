@@ -18,6 +18,7 @@ processyml:
   pdm run python3 -m src.python.process_yaml_data -L {{lang}}
 
 get-fonts:
+  sudo apt update
   sudo apt install fonts-vollkorn fonts-open-sans
 
 pdm-init:

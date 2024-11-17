@@ -1,0 +1,45 @@
+name: Build CV
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-cv:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install Just
+      run: |
+        curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /usr/local/bin/just
+        just --version
+
+    - name: Install Dependencies
+      run: |
+        apt-get update
+        apt-get install -y pandoc fonts-vollkorn fonts-open-sans
+        curl -sSL https://pdm-project.org/install-pdm.py | python3 -
+        just pdm-init
+
+    - name: Build PDF
+      # env:
+      #   LANG: en
+      #   DATE: $(LC_TIME=en_US.UTF-8 date "+%b%Y")
+      run: |
+        just lang=en DOCUMENTS="."
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: Compiled CV
+        path: ./*.pdf
