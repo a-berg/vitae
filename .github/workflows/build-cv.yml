@@ -22,6 +22,7 @@ jobs:
     - name: Install Just
       run: |
         curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /usr/local/bin/just
+        echo "$HOME/usr/local/bin/just" >> "$GITHUB_PATH"
         just --version
 
     - name: Install Dependencies
@@ -32,9 +33,6 @@ jobs:
         just pdm-init
 
     - name: Build PDF
-      # env:
-      #   LANG: en
-      #   DATE: $(LC_TIME=en_US.UTF-8 date "+%b%Y")
       run: |
         just lang=en DOCUMENTS="."
 
