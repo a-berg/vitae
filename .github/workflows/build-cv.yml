@@ -9,7 +9,7 @@ on:
 jobs:
   build-cv:
     runs-on: ubuntu-latest
-    container: docker://pandoc/latex:latest-alpine
+    container: docker://pandoc/latex:latest
 
     steps:
     - name: Checkout repository
