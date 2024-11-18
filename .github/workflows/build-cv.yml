@@ -29,12 +29,21 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Install Dependencies
+    - name: Install Packages
       run: |
         sudo apt-get update
         sudo apt-get install -y fonts-vollkorn fonts-open-sans
         sudo apt-get install -y pandoc texlive-xetex
+
+    - name: Update tlmgr
+      run: |
+        wget http://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh
+        chmod +x update-tlmgr-latest.sh
+        ./update-tlmgr-latest.sh -- --upgrade
         tlmgr init-usertree
+
+    - name: Install Python and XeTeX dependencies
+      run: |
         tlmgr install fontawesome5
         just pdm-init
 
