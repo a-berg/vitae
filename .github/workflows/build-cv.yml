@@ -34,6 +34,7 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y fonts-vollkorn fonts-open-sans
         sudo apt-get install -y pandoc texlive-xetex
+        tlmgr init-usertree
         tlmgr install fontawesome5
         just pdm-init
 
