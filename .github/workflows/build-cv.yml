@@ -33,16 +33,13 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y fonts-vollkorn fonts-open-sans
-        sudo apt-get install -y pandoc texlive-xetex
 
-    - name: Update tlmgr
-      run: |
-        wget http://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh
-        chmod +x update-tlmgr-latest.sh
-        ./update-tlmgr-latest.sh -- --upgrade
-        tlmgr init-usertree
+    - name: Install Tectonic
+      uses: wtfjoke/setup-tectonic@v3
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Install Python and XeTeX dependencies
+    - name: Install Python and LaTeX dependencies
       run: |
         tlmgr install fontawesome5
         just pdm-init
