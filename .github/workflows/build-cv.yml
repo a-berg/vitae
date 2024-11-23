@@ -39,9 +39,8 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Install Python and LaTeX dependencies
+    - name: Install dependencies
       run: |
-        tlmgr install fontawesome5
         just pdm-init
 
     - name: Build PDF with Docker image
