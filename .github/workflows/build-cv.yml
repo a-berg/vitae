@@ -19,28 +19,27 @@ jobs:
       with:
         python-version: '3.10'
 
-    - name: Install Just
+    - name: Set up Just
       uses: taiki-e/install-action@just
       with:
         just-version: 1.36.0
 
-    - name: Install PDM
+    - name: Set up PDM
       uses: pdm-project/setup-pdm@v4
       with:
         python-version: '3.10'
 
-    - name: Install Packages
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y fonts-vollkorn fonts-open-sans
+    - name: Set up Pandoc
+      uses: pandoc/actions/setup@v1
 
-    - name: Install Tectonic
+    - name: Set up Tectonic
       uses: wtfjoke/setup-tectonic@v3
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Install dependencies
+    - name: Install fonts, Python packages
       run: |
+        just get-fonts
         just pdm-init
 
     - name: Build PDF with Docker image
