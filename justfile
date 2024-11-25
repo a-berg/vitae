@@ -6,7 +6,7 @@ DOCUMENTS := "~/Documents/cv/"
 
 all: makepdf
   mv ./cv.pdf ./{{JOBNAME}}_{{lang}}.pdf
-  cp ./{{JOBNAME}}_{{lang}}.pdf {{DOCUMENTS}}
+  -cp ./{{JOBNAME}}_{{lang}}.pdf {{DOCUMENTS}}
 
 makepdf: processyml
   pandoc --defaults pdf_defaults.yaml -V lang_es={{ if lang == "es" { "true" } else { "" } }}
