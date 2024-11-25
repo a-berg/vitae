@@ -40,8 +40,8 @@ jobs:
     - name: Install FontAwesome Free v6
       run: |
         wget https://github.com/FortAwesome/Font-Awesome/releases/download/6.5.2/fontawesome-free-6.5.2-desktop.zip
-        unzip fontawesome-free-6.5.2-desktop.zip -d /usr/local/share/fonts
-        fc-cache -f -v  # Update font cache
+        sudo unzip -j fontawesome-free-6.5.2-desktop.zip "*/otfs/*" -d /usr/local/share/fonts
+        sudo fc-cache -f -v  # Update font cache
 
     - name: Install Vollkorn, Open Sans, Python packages
       run: |
