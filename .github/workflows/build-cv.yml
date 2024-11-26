@@ -52,9 +52,15 @@ jobs:
       run: |
         just lang=en DOCUMENTS="."
 
-    - name: Upload Artifact
-      uses: actions/upload-artifact@v4
+    - name: Release
+      uses: softprops/action-gh-release@v2
+      if: startsWith(github.ref, 'refs/tags/')
       with:
-        name: Compiled CV
-        path: ./*.pdf
-        compression-level: 0  # it's just a 70kb pdf
+        files: ./*.pdf
+
+    # - name: Upload Artifact
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: Compiled CV
+    #     path: ./*.pdf
+    #     compression-level: 0  # it's just a 70kb pdf
