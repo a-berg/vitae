@@ -53,7 +53,8 @@ jobs:
         just lang=en DOCUMENTS="."
 
     - name: Upload Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Compiled CV
         path: ./*.pdf
+        compression-level: 0  # it's just a 70kb pdf
