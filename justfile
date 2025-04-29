@@ -7,19 +7,11 @@ DOCUMENTS := "~/Documents/cv/"
 all: makepdf
   mv ./cv.pdf ./{{JOBNAME}}_{{lang}}.pdf
 
-makepdf: processyml
-  pandoc --defaults pdf_defaults.yaml -V lang_es={{ if lang == "es" { "true" } else { "" } }}
+makepdf: 
+  typst c cv.typ --input lang={{ lang }}
 
-makeweb: processyml
-  pandoc --defaults html_defaults.yaml -V lang_es={{ if lang == "es" { "true" } else { "" } }}
-
-processyml:
-  pdm run python3 -m src.python.process_yaml_data -L {{lang}}
+# makeweb: processyml
+#   pandoc --defaults html_defaults.yaml -V lang_es={{ if lang == "es" { "true" } else { "" } }}
 
 get-fonts:
-  sudo apt update
-  sudo apt install fonts-vollkorn fonts-open-sans
-
-pdm-init:
-  pdm init
-  pdm sync
+   {{ if os() == 'linux' { "sudo apt update && sudo apt install fonts-vollkorn fonts-open-sans" } else if os() == 'macos' {  "brew install cask font-vollkorn font-open-sans" } else { error("Windows not supported!") } }}
