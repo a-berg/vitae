@@ -1,6 +1,0 @@
-input-file: src/dummy.md
-output-file: cv.pdf
-metadata-files:
-  - src/cv.yaml
-template: templates/latex/base.tex
-pdf-engine: tectonic
