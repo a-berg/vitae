@@ -36,14 +36,15 @@
   margin: 15mm,
   header: [
     #set text(8pt, font: "Open Sans")
+    #set align(top)
     #h(1fr)
-    #i18n.update
+    #box(i18n.update, inset: (top: 6pt))
   ],
   numbering: "1",
 )
 #set par(leading: 5pt, spacing: 7pt, justify: true)
 #set list(indent: 1em)
-#set grid(row-gutter: 8pt)
+#set grid(row-gutter: 4pt)
 
 
 #let parse_date(d) = {
@@ -136,6 +137,6 @@
 
 #for it in skills {
   [#text(it.header, size: 13pt, weight: "bold")]
-  grid(columns: (1fr, 3fr), ..for x in it.table {x})
+  grid(columns: (1fr, 3fr),row-gutter: 9pt, ..for x in it.table {x})
   v(12pt)
 }
