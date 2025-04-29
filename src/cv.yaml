@@ -8,15 +8,12 @@ personal:
     linkedin:
       url: http://www.linkedin.com/in/adrianberges/
       display: /in/adrianberges
-      faicon: faLinkedinIn
     github:
       url: http://www.github.com/a-berg
       display: a-berg
-      faicon: faGithub
     website:
       url: https://a-berg.github.io/philambdapi/
       display: blog
-      faicon: faGlobe
 experience:
 - jobtitle: Data Scientist
   location: Vigo, Pontevedra

@@ -1,8 +1,15 @@
 - jobtitle: Data Scientist
+  location: Madrid / Remote
+  company: Keepler
+  start: 2025-02-10
+  end: now
+  highlights:
+    - Did graph analysis with spark and databricks.
+- jobtitle: Data Scientist
   location: Vigo, Pontevedra
   company: Gradiant
   start: 2021-08-17
-  end: now
+  end: 2025-02-07
   highlights:
     - Solved ML problems with time series and tabular data, using Deep Learning, Gradient Boosting, or Reinforcement Learning (among others).
     - Performed extensive data analysis in Python.
