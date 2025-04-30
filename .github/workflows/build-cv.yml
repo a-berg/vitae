@@ -14,28 +14,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+    - name: Install Typst
+      uses: typst-community/setup-typst@v4
 
-    - name: Set up Just
-      uses: taiki-e/install-action@just
-      with:
-        just-version: 1.36.0
-
-    - name: Set up PDM
-      uses: pdm-project/setup-pdm@v4
-      with:
-        python-version: '3.10'
-
-    - name: Set up Pandoc
-      uses: pandoc/actions/setup@v1
-
-    - name: Set up Tectonic
-      uses: wtfjoke/setup-tectonic@v3
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Install Just
+      uses: extractions/setup-just@v3
 
     - name: Install FontAwesome Free v6
       run: |
@@ -43,14 +26,13 @@ jobs:
         sudo unzip -j fontawesome-free-6.5.2-desktop.zip "*/otfs/*" -d /usr/local/share/fonts
         sudo fc-cache -f -v  # Update font cache
 
-    - name: Install Vollkorn, Open Sans, Python packages
+    - name: Install Vollkorn, Open Sans
       run: |
         just get-fonts
-        just pdm-init
 
     - name: Build PDF with Docker image
       run: |
-        just lang=en DOCUMENTS="."
+        just lang=en
 
     - name: Release
       uses: softprops/action-gh-release@v2
