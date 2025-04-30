@@ -30,7 +30,7 @@ jobs:
       run: |
         just get-fonts
 
-    - name: Build PDF with Docker image
+    - name: Build PDF
       run: |
         just lang=en
 
