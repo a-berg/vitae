@@ -12,6 +12,22 @@ r:
     start: 2010
     end: 2015
 o:
+  - title: Generative AI Leader Certification
+    location: Online
+    institution: Google
+    start: 2026
+    end: 2026
+    duration: 5 weeks
+  - title: Spain's 1st place in AWS Community Game Day Europe 2026
+    location: Online
+    institution: Amazon
+    start: 2026
+    end: 2026
+  - title: LangGraph - Develop LLM powered AI agents with LangGrapth
+    location: Online
+    institution: udemy
+    start: 2025
+    end: 2025
   - title: Probabilistic Deep Learning with Tensorflow 2
     location: Online
     institution: Imperial College London via Coursera

@@ -1,10 +1,13 @@
 - jobtitle: Data Scientist
   location: Madrid / Remote
-  company: Keepler
+  company: Keepler Data Tech
   start: 2025-02-10
   end: now
   highlights:
-    - Did graph analysis with spark and databricks.
+    - Participated in a machine learning project for a foreign bank, using Databricks and Spark for data analysis and model training.
+    - Use of Vision Transformers to explore retail SKUs in fashion, using the resulting vector embeddings for data analysis and forecast.
+    - Creation of AWS pipelines for product demand and assignment problems.
+    - Worked on battery degradation modelling using Machine Learning algorithms.
 - jobtitle: Data Scientist
   location: Vigo, Pontevedra
   company: Gradiant

@@ -1,6 +1,7 @@
 - header: Languages
   table:
     - [Spanish, Native]
+    - [Galician, Native]
     - [English, CEFRL C1 (CAE)]
 - header: Soft skills
   table:
@@ -12,7 +13,6 @@
 - header: Technical skills
   table:
     - ["Programming languages", "Python, SQL, \\Cpp, Matlab"]
-    - ["Data Science, ML & AI", "pandas, Tensorflow, scikit-learn, MLFlow, XGBoost, pola.rs, UMAP, Pytorch, DTW"]
+    - ["Data Science, ML & AI", "pandas, Tensorflow, scikit-learn, MLFlow, XGBoost, pola.rs, UMAP, Pytorch, DTW, GenAI"]
     - ["Databases",  "PostgreSQL, MySQL, DuckDB"]
-    - ["Cloud technologies", "Kubernetes, Airflow, Spark"]
-    - ["Tools", "git, JIRA, Emacs, \\LaTeX, pandoc"]
+    - ["Cloud technologies", "Kubernetes, Airflow, Spark, AWS, GCP"]
